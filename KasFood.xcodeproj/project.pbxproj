@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FED971A2868CF8A0072264F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED97192868CF8A0072264F /* AppDelegate.swift */; };
+		3FED971C2868CF8A0072264F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED971B2868CF8A0072264F /* SceneDelegate.swift */; };
+		3FED971E2868CF8A0072264F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED971D2868CF8A0072264F /* ViewController.swift */; };
+		3FED97212868CF8A0072264F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FED971F2868CF8A0072264F /* Main.storyboard */; };
+		3FED97242868CF8A0072264F /* KasFood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FED97222868CF8A0072264F /* KasFood.xcdatamodeld */; };
+		3FED97262868CF8D0072264F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FED97252868CF8D0072264F /* Assets.xcassets */; };
+		3FED97292868CF8D0072264F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FED97272868CF8D0072264F /* LaunchScreen.storyboard */; };
+		3FED97342868CF8D0072264F /* KasFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED97332868CF8D0072264F /* KasFoodTests.swift */; };
+		3FED973E2868CF8D0072264F /* KasFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED973D2868CF8D0072264F /* KasFoodUITests.swift */; };
+		3FED97402868CF8D0072264F /* KasFoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED973F2868CF8D0072264F /* KasFoodUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FED97302868CF8D0072264F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FED970E2868CF8A0072264F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FED97152868CF8A0072264F;
+			remoteInfo = KasFood;
+		};
+		3FED973A2868CF8D0072264F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FED970E2868CF8A0072264F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FED97152868CF8A0072264F;
+			remoteInfo = KasFood;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FED97162868CF8A0072264F /* KasFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KasFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FED97192868CF8A0072264F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FED971B2868CF8A0072264F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3FED971D2868CF8A0072264F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FED97202868CF8A0072264F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FED97232868CF8A0072264F /* KasFood.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KasFood.xcdatamodel; sourceTree = "<group>"; };
+		3FED97252868CF8D0072264F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FED97282868CF8D0072264F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FED972A2868CF8D0072264F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FED972F2868CF8D0072264F /* KasFoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KasFoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FED97332868CF8D0072264F /* KasFoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KasFoodTests.swift; sourceTree = "<group>"; };
+		3FED97392868CF8D0072264F /* KasFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KasFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FED973D2868CF8D0072264F /* KasFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KasFoodUITests.swift; sourceTree = "<group>"; };
+		3FED973F2868CF8D0072264F /* KasFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KasFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FED97132868CF8A0072264F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FED972C2868CF8D0072264F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FED97362868CF8D0072264F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FED970D2868CF8A0072264F = {
+			isa = PBXGroup;
+			children = (
+				3FED97182868CF8A0072264F /* KasFood */,
+				3FED97322868CF8D0072264F /* KasFoodTests */,
+				3FED973C2868CF8D0072264F /* KasFoodUITests */,
+				3FED97172868CF8A0072264F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FED97172868CF8A0072264F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FED97162868CF8A0072264F /* KasFood.app */,
+				3FED972F2868CF8D0072264F /* KasFoodTests.xctest */,
+				3FED97392868CF8D0072264F /* KasFoodUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FED97182868CF8A0072264F /* KasFood */ = {
+			isa = PBXGroup;
+			children = (
+				3FED97192868CF8A0072264F /* AppDelegate.swift */,
+				3FED971B2868CF8A0072264F /* SceneDelegate.swift */,
+				3FED971D2868CF8A0072264F /* ViewController.swift */,
+				3FED971F2868CF8A0072264F /* Main.storyboard */,
+				3FED97252868CF8D0072264F /* Assets.xcassets */,
+				3FED97272868CF8D0072264F /* LaunchScreen.storyboard */,
+				3FED972A2868CF8D0072264F /* Info.plist */,
+				3FED97222868CF8A0072264F /* KasFood.xcdatamodeld */,
+			);
+			path = KasFood;
+			sourceTree = "<group>";
+		};
+		3FED97322868CF8D0072264F /* KasFoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FED97332868CF8D0072264F /* KasFoodTests.swift */,
+			);
+			path = KasFoodTests;
+			sourceTree = "<group>";
+		};
+		3FED973C2868CF8D0072264F /* KasFoodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FED973D2868CF8D0072264F /* KasFoodUITests.swift */,
+				3FED973F2868CF8D0072264F /* KasFoodUITestsLaunchTests.swift */,
+			);
+			path = KasFoodUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FED97152868CF8A0072264F /* KasFood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FED97432868CF8D0072264F /* Build configuration list for PBXNativeTarget "KasFood" */;
+			buildPhases = (
+				3FED97122868CF8A0072264F /* Sources */,
+				3FED97132868CF8A0072264F /* Frameworks */,
+				3FED97142868CF8A0072264F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KasFood;
+			productName = KasFood;
+			productReference = 3FED97162868CF8A0072264F /* KasFood.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FED972E2868CF8D0072264F /* KasFoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FED97462868CF8D0072264F /* Build configuration list for PBXNativeTarget "KasFoodTests" */;
+			buildPhases = (
+				3FED972B2868CF8D0072264F /* Sources */,
+				3FED972C2868CF8D0072264F /* Frameworks */,
+				3FED972D2868CF8D0072264F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FED97312868CF8D0072264F /* PBXTargetDependency */,
+			);
+			name = KasFoodTests;
+			productName = KasFoodTests;
+			productReference = 3FED972F2868CF8D0072264F /* KasFoodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FED97382868CF8D0072264F /* KasFoodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FED97492868CF8D0072264F /* Build configuration list for PBXNativeTarget "KasFoodUITests" */;
+			buildPhases = (
+				3FED97352868CF8D0072264F /* Sources */,
+				3FED97362868CF8D0072264F /* Frameworks */,
+				3FED97372868CF8D0072264F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FED973B2868CF8D0072264F /* PBXTargetDependency */,
+			);
+			name = KasFoodUITests;
+			productName = KasFoodUITests;
+			productReference = 3FED97392868CF8D0072264F /* KasFoodUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FED970E2868CF8A0072264F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3FED97152868CF8A0072264F = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					3FED972E2868CF8D0072264F = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 3FED97152868CF8A0072264F;
+					};
+					3FED97382868CF8D0072264F = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 3FED97152868CF8A0072264F;
+					};
+				};
+			};
+			buildConfigurationList = 3FED97112868CF8A0072264F /* Build configuration list for PBXProject "KasFood" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FED970D2868CF8A0072264F;
+			productRefGroup = 3FED97172868CF8A0072264F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FED97152868CF8A0072264F /* KasFood */,
+				3FED972E2868CF8D0072264F /* KasFoodTests */,
+				3FED97382868CF8D0072264F /* KasFoodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FED97142868CF8A0072264F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FED97292868CF8D0072264F /* LaunchScreen.storyboard in Resources */,
+				3FED97262868CF8D0072264F /* Assets.xcassets in Resources */,
+				3FED97212868CF8A0072264F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FED972D2868CF8D0072264F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FED97372868CF8D0072264F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FED97122868CF8A0072264F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FED971E2868CF8A0072264F /* ViewController.swift in Sources */,
+				3FED971A2868CF8A0072264F /* AppDelegate.swift in Sources */,
+				3FED971C2868CF8A0072264F /* SceneDelegate.swift in Sources */,
+				3FED97242868CF8A0072264F /* KasFood.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FED972B2868CF8D0072264F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FED97342868CF8D0072264F /* KasFoodTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FED97352868CF8D0072264F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FED97402868CF8D0072264F /* KasFoodUITestsLaunchTests.swift in Sources */,
+				3FED973E2868CF8D0072264F /* KasFoodUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FED97312868CF8D0072264F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FED97152868CF8A0072264F /* KasFood */;
+			targetProxy = 3FED97302868CF8D0072264F /* PBXContainerItemProxy */;
+		};
+		3FED973B2868CF8D0072264F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FED97152868CF8A0072264F /* KasFood */;
+			targetProxy = 3FED973A2868CF8D0072264F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FED971F2868CF8A0072264F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FED97202868CF8A0072264F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FED97272868CF8D0072264F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FED97282868CF8D0072264F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FED97412868CF8D0072264F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FED97422868CF8D0072264F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FED97442868CF8D0072264F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AY63UR757Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KasFood/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AzizZhandar.KasFood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FED97452868CF8D0072264F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AY63UR757Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KasFood/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AzizZhandar.KasFood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FED97472868CF8D0072264F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AY63UR757Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AzizZhandar.KasFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KasFood.app/KasFood";
+			};
+			name = Debug;
+		};
+		3FED97482868CF8D0072264F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AY63UR757Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AzizZhandar.KasFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KasFood.app/KasFood";
+			};
+			name = Release;
+		};
+		3FED974A2868CF8D0072264F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AY63UR757Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AzizZhandar.KasFoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KasFood;
+			};
+			name = Debug;
+		};
+		3FED974B2868CF8D0072264F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AY63UR757Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AzizZhandar.KasFoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KasFood;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FED97112868CF8A0072264F /* Build configuration list for PBXProject "KasFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FED97412868CF8D0072264F /* Debug */,
+				3FED97422868CF8D0072264F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FED97432868CF8D0072264F /* Build configuration list for PBXNativeTarget "KasFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FED97442868CF8D0072264F /* Debug */,
+				3FED97452868CF8D0072264F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FED97462868CF8D0072264F /* Build configuration list for PBXNativeTarget "KasFoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FED97472868CF8D0072264F /* Debug */,
+				3FED97482868CF8D0072264F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FED97492868CF8D0072264F /* Build configuration list for PBXNativeTarget "KasFoodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FED974A2868CF8D0072264F /* Debug */,
+				3FED974B2868CF8D0072264F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3FED97222868CF8A0072264F /* KasFood.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FED97232868CF8A0072264F /* KasFood.xcdatamodel */,
+			);
+			currentVersion = 3FED97232868CF8A0072264F /* KasFood.xcdatamodel */;
+			path = KasFood.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3FED970E2868CF8A0072264F /* Project object */;
+}
