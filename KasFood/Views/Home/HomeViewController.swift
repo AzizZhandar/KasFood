@@ -74,11 +74,11 @@ class HomeViewController: UIViewController {
 //        .init(image: "", name: "Brochetas de resr", description: "Con papas fritas o patacones", calories: 5.50),
 //    ]
 
-    var discounts: [Discounts] = [
-        getCellsInfo(onSuccess: { <#Discounts#> in
-            <#code#>
-        }, onError: <#T##(Error?) -> Void#>)
-    ]
+//    var discounts: [Discounts] = [
+//        getCellsInfo(onSuccess: { <#Discounts#> in
+//            <#code#>
+//        }, onError: <#T##(Error?) -> Void#>)
+//    ]
     var discountOfTheDay: [Discounts] = [
         .init(name: "", description: "", imageURL: "", price: 0.0),
         
