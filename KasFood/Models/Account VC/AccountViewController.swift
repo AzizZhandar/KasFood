@@ -7,6 +7,8 @@
 
 import UIKit
 import Firebase
+import ProgressHUD
+import IQKeyboardManagerSwift
 
 class AccountViewController: UIViewController {
 
@@ -21,15 +23,20 @@ class AccountViewController: UIViewController {
 
     let viewA = UIView()
     let viewArea = UIView()
+
+
     let viewAreaBonus = UIView()
+    let bonusAmountLabel = UILabel()
+    let bonusText = UILabel()
+    let bonusAmount = 2
 
     let loginFields = LoginViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let defaults = UserDefaults.standard
-        
+
         Service.getUserInfo {
             self.helloLabel.text = "Hello, \(defaults.string(forKey: "userNameKey")!)"
             self.memberLogin.text = "Login: \(defaults.string(forKey: "userEmailKey")!)"
@@ -43,6 +50,8 @@ class AccountViewController: UIViewController {
         setupAccount()
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log Out", style: .plain, target: self, action: #selector(logOutBarButtonItemPressed))
+        navigationItem.rightBarButtonItem?.tintColor = .systemBackground
+        navigationItem.leftBarButtonItem?.tintColor = .systemBackground
     }
 
     func styleAccount() {
@@ -51,6 +60,8 @@ class AccountViewController: UIViewController {
         memberLogin.translatesAutoresizingMaskIntoConstraints = false
         memberPassword.translatesAutoresizingMaskIntoConstraints = false
         helloLabel.translatesAutoresizingMaskIntoConstraints = false
+        bonusAmountLabel.translatesAutoresizingMaskIntoConstraints = false
+        bonusText.translatesAutoresizingMaskIntoConstraints = false
     
         viewA.translatesAutoresizingMaskIntoConstraints = false
         viewA.backgroundColor = .systemOrange
@@ -95,6 +106,16 @@ class AccountViewController: UIViewController {
 
         backgroundImage.image = UIImage(named: "account-1")
         backgroundImage.contentMode = .scaleAspectFill
+        
+        bonusAmountLabel.text = "$\(String(bonusAmount))"
+        bonusAmountLabel.font = UIFont.systemFont(ofSize: 40)
+        bonusAmountLabel.textAlignment = .left
+        bonusAmountLabel.textColor = UIColor(red: 0.00, green: 0.22, blue: 0.40, alpha: 1.00)
+        
+        bonusText.text = "bonuses"
+        bonusText.font = UIFont.systemFont(ofSize: 20)
+        bonusText.textAlignment = .left
+        bonusText.textColor = UIColor(red: 0.00, green: 0.22, blue: 0.40, alpha: 1.00)
 
     }
     
@@ -110,6 +131,8 @@ class AccountViewController: UIViewController {
         viewArea.addSubview(memberName)
         viewArea.addSubview(memberPassword)
         
+        viewAreaBonus.addSubview(bonusAmountLabel)
+        viewAreaBonus.addSubview(bonusText)
 //
 //
         NSLayoutConstraint.activate([
@@ -149,7 +172,14 @@ class AccountViewController: UIViewController {
             viewAreaBonus.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
             viewAreaBonus.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
             viewAreaBonus.heightAnchor.constraint(equalToConstant: 100),
-
+            
+            bonusAmountLabel.leadingAnchor.constraint(equalTo: viewAreaBonus.leadingAnchor, constant: 20),
+            bonusAmountLabel.topAnchor.constraint(equalTo: viewAreaBonus.topAnchor, constant: 20),
+            bonusAmountLabel.bottomAnchor.constraint(equalTo: viewAreaBonus.bottomAnchor, constant: -20),
+            
+            bonusText.leadingAnchor.constraint(equalTo: bonusAmountLabel.trailingAnchor, constant: 7),
+            bonusText.centerYAnchor.constraint(equalTo: viewAreaBonus.centerYAnchor),
+            
 
         ])
     }

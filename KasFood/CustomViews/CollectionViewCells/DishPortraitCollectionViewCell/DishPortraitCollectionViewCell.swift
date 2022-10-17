@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DishPortraitCollectionViewCell: UICollectionViewCell {
     
@@ -15,19 +16,11 @@ class DishPortraitCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var dishImageView: UIImageView!
     @IBOutlet weak var caloriesLbl: UILabel!
     @IBOutlet weak var descriptionLbl: UILabel!
-    
-    func setup(dish: Dish) {
-        titleLbl.text = dish.name
-//        dishImageView.image = dish.imageExample
-//        dishImageView.kf.setImage(with: dish.image?.asUrl)
-        descriptionLbl.text = dish.description
-        caloriesLbl.text = dish.formattedCalories
-    }
 
-    func setupDatabase(dish: Discounts) {
+    func setupDatabase(dish: Discount) {
         titleLbl.text = dish.name
         descriptionLbl.text = dish.description
-        dishImageView.image = UIImage(named: "\(dish.imageURL)")
-        caloriesLbl.text = "\(dish.price)"
+        dishImageView.kf.setImage(with: dish.imageURL.asUrl)
+        caloriesLbl.text = "$ \(dish.price)"
     }
 }

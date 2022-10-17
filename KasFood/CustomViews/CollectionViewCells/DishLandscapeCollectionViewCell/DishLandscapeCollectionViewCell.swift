@@ -16,11 +16,19 @@ class DishLandscapeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var caloriesLbl: UILabel!
     
-    func setup(dish: Dish) {
-//        dishImageView.kf.setImage(with: dish.image?.asUrl)
-//        dishImageView.image = dish.imageExample
+    func setup(dish: Discount) {
+        dishImageView.kf.setImage(with: dish.imageURL.asUrl)
+//        dishImageView.image = UIImage(named: "\(dish.imageURL)")
         titleLbl.text = dish.name
         descriptionLbl.text = dish.description
-        caloriesLbl.text = dish.formattedCalories
+        caloriesLbl.text = "$ \(dish.price)"
     }
+    
+//    func setupDatabase(dish: Discount) {
+//        titleLbl.text = dish.name
+//        descriptionLbl.text = dish.description
+//        dishImageView.image = UIImage(named: "\(dish.imageURL)")
+//        caloriesLbl.text = "\(dish.price)"
+//    }
+
 }

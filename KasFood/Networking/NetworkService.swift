@@ -29,7 +29,8 @@ struct NetworkService {
             completion(.failure(AppError.unknownError))
             return
     }
-    URLSession.shared.dataTask(with: request) { data, response,
+
+        URLSession.shared.dataTask(with: request) { data, response,
         error in
         var result: Result<Data, Error>?
         if let data = data {

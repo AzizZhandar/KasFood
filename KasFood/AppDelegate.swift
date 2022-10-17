@@ -9,12 +9,13 @@ import UIKit
 import CoreData
 import FirebaseCore
 import FirebaseAuth
+import IQKeyboardManagerSwift
+//import Stripe
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 //        FirebaseApp.configure()
@@ -24,6 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
 //        UINavigationBar.appearance().shadowImage = UIImage()
 //        UINavigationBar.appearance().tintColor = .black
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+//        Stripe.setDefaultPublishableKey("pk_test_51Lg3jiKqyhp84WX4tWmx6dNXH4RU275NfCSGh4lDZ3mD5aUlqdjjvE8vwtbyiSWOQPyigk0js0rV9Los63UGaV3k00hJGLAiAQ")
+    
+        
         return true
     }
 

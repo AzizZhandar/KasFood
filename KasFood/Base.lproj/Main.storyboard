@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fPE-Cx-AjS">
-                                <rect key="frame" x="0.0" y="44" width="414" height="666"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="662"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="A4m-BU-m69">
                                     <size key="itemSize" width="414" height="663"/>
@@ -28,7 +29,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="pzI-qg-IyE" customClass="OnboardingCollectionViewCell" customModule="KasFood" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1.5" width="414" height="663"/>
+                                        <rect key="frame" x="0.0" y="-0.5" width="414" height="663"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AEY-nm-bCP">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="663"/>
@@ -92,7 +93,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next">
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -104,7 +105,7 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="HED-bc-fpo">
-                                <rect key="frame" x="149.5" y="710" width="115.5" height="26"/>
+                                <rect key="frame" x="149" y="710" width="116.5" height="26"/>
                                 <color key="pageIndicatorTintColor" systemColor="systemGray5Color"/>
                                 <color key="currentPageIndicatorTintColor" red="0.96841138599999999" green="0.5998649345" blue="0.02406788285" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pageControl>
@@ -141,7 +142,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbI-9u-MP8">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="804"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EB8-8n-NBr">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="726"/>
@@ -344,32 +345,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dCR-FX-5eR">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XEE-FX-oGp">
+                                <rect key="frame" x="0.0" y="92" width="414" height="629"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dCR-FX-5eR">
+                                        <rect key="frame" x="0.0" y="0.0" width="389" height="629"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="mk8-up-pry" id="8xo-KG-OtW"/>
+                                            <outlet property="delegate" destination="mk8-up-pry" id="E4v-vT-s1M"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Qg2-Wg-hcj"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Z05-u9-IWr"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aod-RX-uGy">
+                                <rect key="frame" x="15" y="782" width="384" height="65"/>
+                                <color key="backgroundColor" red="0.96841138599999999" green="0.5998649345" blue="0.02406788285" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Ux4-9i-wQc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pay"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outlet property="dataSource" destination="mk8-up-pry" id="8xo-KG-OtW"/>
-                                    <outlet property="delegate" destination="mk8-up-pry" id="E4v-vT-s1M"/>
+                                    <action selector="payButtonPressed:" destination="mk8-up-pry" eventType="touchUpInside" id="5dj-Hz-ShP"/>
+                                    <segue destination="HTd-DY-Z3O" kind="presentation" id="vjA-H3-KjM"/>
                                 </connections>
-                            </tableView>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q8h-VQ-Fgs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dCR-FX-5eR" firstAttribute="trailing" secondItem="Q8h-VQ-Fgs" secondAttribute="trailing" id="1x4-Q8-Uto"/>
-                            <constraint firstItem="dCR-FX-5eR" firstAttribute="top" secondItem="Q8h-VQ-Fgs" secondAttribute="top" id="Oa1-dw-TUl"/>
-                            <constraint firstItem="dCR-FX-5eR" firstAttribute="leading" secondItem="Q8h-VQ-Fgs" secondAttribute="leading" id="onY-mo-xjL"/>
-                            <constraint firstAttribute="bottom" secondItem="dCR-FX-5eR" secondAttribute="bottom" id="sWS-Db-uD1"/>
+                            <constraint firstItem="aod-RX-uGy" firstAttribute="leading" secondItem="Q8h-VQ-Fgs" secondAttribute="leading" constant="15" id="5zh-Ym-9nI"/>
+                            <constraint firstItem="Q8h-VQ-Fgs" firstAttribute="trailing" secondItem="aod-RX-uGy" secondAttribute="trailing" constant="15" id="Fa5-ws-FH4"/>
+                            <constraint firstItem="XEE-FX-oGp" firstAttribute="top" secondItem="Q8h-VQ-Fgs" secondAttribute="top" id="LV1-pg-GRs"/>
+                            <constraint firstItem="XEE-FX-oGp" firstAttribute="leading" secondItem="Q8h-VQ-Fgs" secondAttribute="leading" id="VaS-cG-pSb"/>
+                            <constraint firstItem="aod-RX-uGy" firstAttribute="bottom" secondItem="Q8h-VQ-Fgs" secondAttribute="bottom" constant="-15" id="d8n-md-plU"/>
+                            <constraint firstItem="Q8h-VQ-Fgs" firstAttribute="bottom" secondItem="XEE-FX-oGp" secondAttribute="bottom" constant="100" id="i8k-64-Ix1"/>
+                            <constraint firstItem="XEE-FX-oGp" firstAttribute="trailing" secondItem="Q8h-VQ-Fgs" secondAttribute="trailing" id="lVf-cP-y6q"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="slc-w5-F9r"/>
                     <connections>
+                        <outlet property="payButton" destination="aod-RX-uGy" id="7Ex-xs-udm"/>
                         <outlet property="tableView" destination="dCR-FX-5eR" id="Goz-GA-I5w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBx-1P-mWB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2841" y="811"/>
+            <point key="canvasLocation" x="2840.579710144928" y="810.9375"/>
+        </scene>
+        <!--Order View Controller-->
+        <scene sceneID="7Xo-Mw-lVc">
+            <objects>
+                <viewController storyboardIdentifier="OrderVC" id="HTd-DY-Z3O" customClass="OrderViewController" customModule="KasFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hVf-6M-5cn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LnA-vn-izq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pry-C5-ddl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJI-Nh-lT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3664" y="811"/>
         </scene>
         <!--Forget Password View Controller-->
         <scene sceneID="jDR-yB-2fy">
@@ -384,7 +431,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNW-8O-9WD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1206" y="811"/>
+            <point key="canvasLocation" x="1222" y="811"/>
         </scene>
         <!--Dish Detail View Controller-->
         <scene sceneID="Mu7-J1-fdk">
@@ -395,7 +442,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="8qf-cc-Xkf">
-                                <rect key="frame" x="0.0" y="54" width="414" height="581"/>
+                                <rect key="frame" x="0.0" y="58" width="414" height="577"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="knL-Td-xvI">
                                 <rect key="frame" x="16" y="651" width="382" height="195"/>
@@ -441,7 +488,7 @@
                                             <constraint firstAttribute="height" constant="50" id="0py-88-fjg"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Order">
+                                        <buttonConfiguration key="configuration" style="plain" title="Add to Cart">
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
@@ -473,6 +520,7 @@
                         <outlet property="descriptionLbl" destination="W4C-ez-8Fl" id="VrM-tp-8hA"/>
                         <outlet property="dishImageView" destination="8qf-cc-Xkf" id="fYY-wv-4HG"/>
                         <outlet property="nameField" destination="5le-bR-ycf" id="YI4-KR-zer"/>
+                        <outlet property="orderButton" destination="3p1-Zm-hsj" id="LQ7-dx-Nvq"/>
                         <outlet property="titleLbl" destination="rAZ-NT-vw6" id="xbl-eZ-RIt"/>
                     </connections>
                 </viewController>
@@ -489,7 +537,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UM9-74-z28">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="848"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="P8S-4m-EeZ" id="v0U-uy-7qb"/>
@@ -542,7 +590,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kkd-Tj-uEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="413" y="811"/>
+            <point key="canvasLocation" x="558" y="811"/>
         </scene>
         <!--He-->
         <scene sceneID="NiH-Pb-9uu">
@@ -550,7 +598,7 @@
                 <navigationController storyboardIdentifier="HomeNC" automaticallyAdjustsScrollViewInsets="NO" id="v6t-cU-57y" customClass="He" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4hy-uI-XSk">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -563,11 +611,12 @@
             <point key="canvasLocation" x="1616" y="117"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="labelColor"/>
     <resources>
-        <image name="cart.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="cart.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>

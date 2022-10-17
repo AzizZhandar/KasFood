@@ -8,131 +8,133 @@
 import Foundation
 import Firebase
 import FirebaseDatabase
+import FirebaseStorage
+import UIKit
 
 var popularDishesCount = ""
 
 class FirebaseData {
-//    let name: String
-//    let description: String
-//    let imageURL: String
-//    let price: Double
-//
-//    let ref: DatabaseReference? // ссылка на базу данных (посылать данные - получать данные)
-//
-//    init(name: String,
-//         description: String,
-//         imageURL: String,
-//         price: Double) {
-//
-//        self.name = name
-//        self.description = description
-//        self.imageURL = imageURL
-//        self.price = price
-//
-//        self.ref = nil
-//    }
     
-//    convenience init() {
-    // подтягиваются данные для ячейки
-//
-//    }
-//
-//    // ответ из Firebase
-//
-//    init?(snapshot: DataSnapshot) {
-//        guard let value = snapshot.value as? [String: Any] else { return nil }
-//
-//        guard let name = value["name"] as? String,
-//              let description = value["description"] as ? String,
-//              let imageURL = value["imageURL"] as? String,
-//              let price = value["price"] as? Double else { return nil }
-//
-//        self.name = name
-//        self.description = description
-//        self.imageURL = imageURL
-//        self.price = price
-//
-//        self.ref = snapshot.ref
-//    }
-//
-//    init?(dict: [String: Any]) {
-//        guard let name = dict["name"] as? String,
-//              let description = dict["description"] as? String,
-//              let imageURL = dict["imageURL"] as? String,
-//              let price = dict["price"] as? Double else { return nil }
-//
-//        self.name = name
-//        self.description = description
-//        self.imageURL = imageURL
-//        self.price = price
-//
-//        self.ref = nil
-//    }
-//
-//}
-//    static func signUpUser(email: String, password: String, name: String, onSuccess: @escaping () -> Void, onError: @escaping (_ error: Error?) -> Void) {
-//        let auth = Auth.auth()
-//
-//        auth.createUser(withEmail: email, password: password) { (authResult, error) in
-//            if error != nil {
-//                onError(error!)
-//            }
-//            uploadCellsToDatabase(name: <#T##String#>, description: <#T##String#>, price: <#T##String#>, imageURL: <#T##String#>, onSuccess: <#T##() -> Void#>)
-//        }
-//    }
-
     static func registerCellsInfo(name: String, description: String, imageURL: String, price: Double, onSuccess: @escaping () -> Void, onError: @escaping (_ error: Error?) -> Void) {
-        
-        uploadCellsToDatabase(name: name, description: description, price: price, imageURL: imageURL, onSuccess: onSuccess)
     }
     
-    static func getCellsInfo(onSuccess: @escaping (_ goodData: Discounts) -> Void, onError: @escaping (_ error: Error?) -> Void) {
+// MARK: - Get data from database to PopularDishes
+
+    func getCellsInfo(onSuccess: @escaping (_ goodData: Discounts) -> Void, onError: @escaping (_ error: Error?) -> Void) {
         let ref: DatabaseReference? // ссылка на базу данных (посылать данные - получать данные)
-
-        ref = Database.database().reference(withPath: "dishCatefory")
-//        let defaults = UserDefaults.standard
-        ref?.observe(.value) { (snapshot) in
-            if let dictionary = snapshot.value as? [String: Any] {
-                let name = dictionary["name"] as? String
-                let description = dictionary["description"] as? String
-                let price = dictionary["price"] as? Double
-                let imageURL = dictionary["imageURL"] as? String
+        
+        ref = Database.database().reference()
+        ref?.child("dishCategory").observeSingleEvent(of: .value, with: { response in
+            var discounts = Discounts()
+            for child in response.children {
+                guard let snap = child as? DataSnapshot else { return }
+                guard let value = snap.value as? NSDictionary else { return }
+                guard let name = value["name"] as? String,
+                      let description = value["description"] as? String,
+                      let price = value["price"] as? Double,
+                      let imageURL = value["imageURL"] as? String else { return }
                 
-                let dishPortraitId = snapshot.key
-                print(dishPortraitId)
-
-                let item = Discounts(
-                    name: name ?? "",
-                    description: description ?? "",
-                    imageURL: imageURL ?? "",
-                    price: price ?? 0.0)
-                
-//                defaults.set(name, forKey: "nameKey")
-//                defaults.set(description, forKey: "descriptionKey")
-//                defaults.set(price, forKey: "priceKey")
-//                defaults.set(imageURL, forKey: "imageURLKey")
-                
-                onSuccess(item)
+                let discount = Discount(
+                    name: name,
+                    description: description,
+                    imageURL: imageURL,
+                    price: price
+                )
+                discounts.append(discount)
             }
-        } withCancel: { error in
+
+            onSuccess(discounts)
+        }) { error in
             onError(error)
         }
     }
 
-    
-    static func uploadCellsToDatabase(name: String, description: String, price: Double, imageURL: String, onSuccess: @escaping () -> Void) {
-        let ref = Database.database().reference(withPath: "dishCatefory")
-//        let uid = Auth.auth().currentUser?.uid
-        
-        ref.setValue(["name" : name, "description" : description, "price" : price, "imageURL" : imageURL])
-        onSuccess()
+// MARK: - Get data from database to SpecialDoshes
+
+    func getActionsDishesOfTheDay(onSuccess: @escaping (_ goodData: Discounts) -> Void, onError: @escaping (_ error: Error?) -> Void) {
+        let ref: DatabaseReference? // ссылка на базу данных (посылать данные - получать данные)
+
+        ref = Database.database().reference()
+        ref?.child("actionsDishesOfTheDay").observeSingleEvent(of: .value, with: { response in
+            var discounts = Discounts()
+            for child in response.children {
+                guard let snap = child as? DataSnapshot else { return }
+                guard let value = snap.value as? NSDictionary else { return }
+                guard let name = value["name"] as? String,
+                      let description = value["description"] as? String,
+                      let price = value["price"] as? Double,
+                      let imageURL = value["imageURL"] as? String else { return }
+
+                let discount = Discount(
+                    name: name,
+                    description: description,
+                    imageURL: imageURL,
+                    price: price
+                )
+                discounts.append(discount)
+            }
+
+            onSuccess(discounts)
+        }) { error in
+            onError(error)
+        }
     }
 
-}
+// MARK: - Get data from database to Categories
 
-struct Discounts {
-    let name: String
-    let description: String
-    let imageURL: String
-    let price: Double
+    func getCategoryDishes(onSuccess: @escaping (_ goodData: DishCategories) -> Void, onError: @escaping (_ error: Error?) -> Void) {
+        let ref: DatabaseReference? // ссылка на базу данных (посылать данные - получать данные)
+
+        ref = Database.database().reference()
+        ref?.child("categories").observeSingleEvent(of: .value, with: { response in
+            var categories = DishCategories()
+            for child in response.children {
+                guard let snap = child as? DataSnapshot else { return }
+                guard let value = snap.value as? NSDictionary else { return }
+                guard let category = value["categorie"] as? String,
+                      let imageCategorie = value["imageCategorie"] as? String else { return }
+
+                let categorie = DishCategory(
+                    category: category,
+                    imageExample: imageCategorie
+                )
+                categories.append(categorie)
+            }
+
+            onSuccess(categories)
+        }) { error in
+            onError(error)
+        }
+    }
+
+
+// MARK: - Get data from database to CategoryListDishes - Specific
+
+    func getCategoryDishesToListDishes(onSuccess: @escaping (_ goodData: CategorieNames) -> Void, onError: @escaping (_ error: Error?) -> Void) {
+        let ref: DatabaseReference? // ссылка на базу данных (посылать данные - получать данные)
+
+        ref = Database.database().reference()
+        ref?.child("testCategory").child("category").observeSingleEvent(of: .value, with: { response in
+            var categories = CategorieNames()
+            for child in response.children {
+                guard let snap = child as? DataSnapshot else { return }
+                guard let value = snap.value as? NSDictionary else { return }
+                guard let categoryName = snap.key as? String else { return }
+
+                let categorie = CategoryName(
+                    categoryName: categoryName
+                )
+                categories.append(categorie)
+                print(categoryName)
+            }
+
+            onSuccess(categories)
+        }) { error in
+            onError(error)
+        }
+    }
+
+
+
+
 }

@@ -9,13 +9,12 @@ import Foundation
 import UIKit
 
 struct DishCategory {
-    let name: String?
-    let imageExample: UIImage?
-    
-//    var toAnyObject: Any {
-//        return [
-//            "name": name,
-//            "image": image,
-//        ]
-//    }
+    let category: String
+    let imageExample: String
 }
+typealias DishCategories = [DishCategory]
+
+struct CategoryName {
+    let categoryName: String
+}
+typealias CategorieNames = [CategoryName]

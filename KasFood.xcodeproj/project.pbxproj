@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B6DAFF8618F773701EF9A5F /* Pods_KasFoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58E251E07D220DF8933FD26 /* Pods_KasFoodTests.framework */; };
 		3F20E4DA2892B56500405736 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F20E4D92892B56500405736 /* AlertViewController.swift */; };
 		3F259061289E7EDE00C111CF /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F259060289E7EDE00C111CF /* AccountViewController.swift */; };
 		3F45AC3F28B0F2CC00DE1CB6 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45AC3E28B0F2CC00DE1CB6 /* ForgetPasswordViewController.swift */; };
 		3F45AC4128B3891700DE1CB6 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45AC4028B3891600DE1CB6 /* ApiResponse.swift */; };
 		3F51B27A28A0C65700063CA4 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F51B27928A0C65700063CA4 /* Service.swift */; };
-		3F84BC282896B9A30096E644 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F84BC272896B9A30096E644 /* GoogleService-Info.plist */; };
+		3F5EE1EB28C7DEA900B6CA10 /* Discounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EE1EA28C7DEA900B6CA10 /* Discounts.swift */; };
 		3F852D21286DBF9500CA1718 /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F852D1F286DBF9500CA1718 /* DishPortraitCollectionViewCell.swift */; };
 		3F852D22286DBF9500CA1718 /* DishPortraitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F852D20286DBF9500CA1718 /* DishPortraitCollectionViewCell.xib */; };
 		3F852D24286DC19C00CA1718 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F852D23286DC19C00CA1718 /* Dish.swift */; };
@@ -20,6 +21,7 @@
 		3F8BEDE02870271700B6322F /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8BEDDE2870271700B6322F /* DishLandscapeCollectionViewCell.xib */; };
 		3F8BEDE328704E7500B6322F /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BEDE228704E7500B6322F /* DishDetailViewController.swift */; };
 		3F8BEDE528704FE500B6322F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BEDE428704FE500B6322F /* UIViewController.swift */; };
+		3F90542928E9741B00879C5C /* BottomOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90542828E9741B00879C5C /* BottomOrderView.swift */; };
 		3F9177D1289B87AE00521DEA /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3F9177D0289B87AE00521DEA /* FirebaseAnalytics */; };
 		3F9177D3289B87AE00521DEA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3F9177D2289B87AE00521DEA /* FirebaseAuth */; };
 		3F9177D5289B87AE00521DEA /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3F9177D4289B87AE00521DEA /* FirebaseCrashlytics */; };
@@ -31,6 +33,7 @@
 		3F9F50DB287339AD00F75C19 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F9F50D9287339AD00F75C19 /* DishListTableViewCell.xib */; };
 		3F9F50DE28733D0200F75C19 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F50DD28733D0200F75C19 /* ListDishesViewController.swift */; };
 		3FB536A02890764500937802 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5369F2890764500937802 /* LoginViewController.swift */; };
+		3FB733FA28CF4F7D004C607E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FB733F928CF4F7C004C607E /* GoogleService-Info.plist */; };
 		3FCC35BE2873FC5800953C5E /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC35BD2873FC5800953C5E /* ListOrdersViewController.swift */; };
 		3FCC35C02873FDC700953C5E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC35BF2873FDC700953C5E /* Order.swift */; };
 		3FCC35C32874035B00953C5E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC35C22874035B00953C5E /* NetworkService.swift */; };
@@ -56,7 +59,11 @@
 		3FED97562869AAD30072264F /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED97552869AAD30072264F /* OnboardingSlide.swift */; };
 		3FED97582869AF280072264F /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED97572869AF280072264F /* OnboardingCollectionViewCell.swift */; };
 		3FED975B2869F26B0072264F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED975A2869F26B0072264F /* HomeViewController.swift */; };
+		3FEED25628DAC4F900CE9E51 /* AlertAsAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEED25528DAC4F900CE9E51 /* AlertAsAdViewController.swift */; };
+		3FEED25828DB428C00CE9E51 /* OrderFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEED25728DB428C00CE9E51 /* OrderFetching.swift */; };
 		3FF9EF8C28BCC26E001E465E /* FirebaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9EF8B28BCC26E001E465E /* FirebaseData.swift */; };
+		962CF000DE9E542317C36509 /* Pods_KasFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5552EADF244FACC5BDDC0D11 /* Pods_KasFood.framework */; };
+		9CD2F267B712983E11ECE346 /* Pods_KasFood_KasFoodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4025B4EFDE55B9F722B3E449 /* Pods_KasFood_KasFoodUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,12 +84,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		252FF319B94BAAB5B4D91018 /* Pods-KasFood-KasFoodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KasFood-KasFoodUITests.release.xcconfig"; path = "Target Support Files/Pods-KasFood-KasFoodUITests/Pods-KasFood-KasFoodUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3DF0DF4870B00D0FD42E0420 /* Pods-KasFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KasFood.debug.xcconfig"; path = "Target Support Files/Pods-KasFood/Pods-KasFood.debug.xcconfig"; sourceTree = "<group>"; };
 		3F20E4D92892B56500405736 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		3F259060289E7EDE00C111CF /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		3F45AC3E28B0F2CC00DE1CB6 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		3F45AC4028B3891600DE1CB6 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		3F51B27928A0C65700063CA4 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		3F84BC272896B9A30096E644 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3F5EE1EA28C7DEA900B6CA10 /* Discounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discounts.swift; sourceTree = "<group>"; };
 		3F852D1F286DBF9500CA1718 /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
 		3F852D20286DBF9500CA1718 /* DishPortraitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishPortraitCollectionViewCell.xib; sourceTree = "<group>"; };
 		3F852D23286DC19C00CA1718 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
@@ -90,12 +99,14 @@
 		3F8BEDDE2870271700B6322F /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
 		3F8BEDE228704E7500B6322F /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
 		3F8BEDE428704FE500B6322F /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		3F90542828E9741B00879C5C /* BottomOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomOrderView.swift; sourceTree = "<group>"; };
 		3F9177DA289B8C1C00521DEA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3F9177DC289BE08400521DEA /* SignUpAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAlertViewController.swift; sourceTree = "<group>"; };
 		3F9F50D8287339AD00F75C19 /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
 		3F9F50D9287339AD00F75C19 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
 		3F9F50DD28733D0200F75C19 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
 		3FB5369F2890764500937802 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3FB733F928CF4F7C004C607E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3FCC35BD2873FC5800953C5E /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
 		3FCC35BF2873FDC700953C5E /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		3FCC35C22874035B00953C5E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -125,7 +136,16 @@
 		3FED97552869AAD30072264F /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		3FED97572869AF280072264F /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		3FED975A2869F26B0072264F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3FEED25528DAC4F900CE9E51 /* AlertAsAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAsAdViewController.swift; sourceTree = "<group>"; };
+		3FEED25728DB428C00CE9E51 /* OrderFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFetching.swift; sourceTree = "<group>"; };
 		3FF9EF8B28BCC26E001E465E /* FirebaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseData.swift; sourceTree = "<group>"; };
+		4025B4EFDE55B9F722B3E449 /* Pods_KasFood_KasFoodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KasFood_KasFoodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5552EADF244FACC5BDDC0D11 /* Pods_KasFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KasFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87C74A278C6B7309410D517B /* Pods-KasFoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KasFoodTests.release.xcconfig"; path = "Target Support Files/Pods-KasFoodTests/Pods-KasFoodTests.release.xcconfig"; sourceTree = "<group>"; };
+		A58E251E07D220DF8933FD26 /* Pods_KasFoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KasFoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2284B41F2EFDFF379D13BB /* Pods-KasFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KasFood.release.xcconfig"; path = "Target Support Files/Pods-KasFood/Pods-KasFood.release.xcconfig"; sourceTree = "<group>"; };
+		DD5FD98B09FD41C8BD70C772 /* Pods-KasFood-KasFoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KasFood-KasFoodUITests.debug.xcconfig"; path = "Target Support Files/Pods-KasFood-KasFoodUITests/Pods-KasFood-KasFoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3DCB3B9774695D09FEC52EE /* Pods-KasFoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KasFoodTests.debug.xcconfig"; path = "Target Support Files/Pods-KasFoodTests/Pods-KasFoodTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +158,7 @@
 				3F9177D7289B87AE00521DEA /* FirebaseDatabase in Frameworks */,
 				3F9177D9289B87AE00521DEA /* FirebaseStorage in Frameworks */,
 				3F9177D3289B87AE00521DEA /* FirebaseAuth in Frameworks */,
+				962CF000DE9E542317C36509 /* Pods_KasFood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6DAFF8618F773701EF9A5F /* Pods_KasFoodTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD2F267B712983E11ECE346 /* Pods_KasFood_KasFoodUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				3F8BEDE228704E7500B6322F /* DishDetailViewController.swift */,
+				3F90542828E9741B00879C5C /* BottomOrderView.swift */,
 			);
 			path = DishDetail;
 			sourceTree = "<group>";
@@ -263,6 +287,8 @@
 				3FED97322868CF8D0072264F /* KasFoodTests */,
 				3FED973C2868CF8D0072264F /* KasFoodUITests */,
 				3FED97172868CF8A0072264F /* Products */,
+				419AB7191773824EA1D8D6E3 /* Pods */,
+				65F8030F2FB519FF7DC8D27C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -290,7 +316,7 @@
 				3FED97252868CF8D0072264F /* Assets.xcassets */,
 				3FED97272868CF8D0072264F /* LaunchScreen.storyboard */,
 				3FED972A2868CF8D0072264F /* Info.plist */,
-				3F84BC272896B9A30096E644 /* GoogleService-Info.plist */,
+				3FB733F928CF4F7C004C607E /* GoogleService-Info.plist */,
 				3FED97222868CF8A0072264F /* KasFood.xcdatamodeld */,
 			);
 			path = KasFood;
@@ -322,6 +348,8 @@
 				3FE42043286B392E0061C25A /* DishCategory.swift */,
 				3F852D23286DC19C00CA1718 /* Dish.swift */,
 				3FCC35BF2873FDC700953C5E /* Order.swift */,
+				3F5EE1EA28C7DEA900B6CA10 /* Discounts.swift */,
+				3FEED25528DAC4F900CE9E51 /* AlertAsAdViewController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -366,6 +394,7 @@
 				3F8BEDE428704FE500B6322F /* UIViewController.swift */,
 				3F51B27928A0C65700063CA4 /* Service.swift */,
 				3FF9EF8B28BCC26E001E465E /* FirebaseData.swift */,
+				3FEED25728DB428C00CE9E51 /* OrderFetching.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -405,6 +434,29 @@
 			path = "Account VC";
 			sourceTree = "<group>";
 		};
+		419AB7191773824EA1D8D6E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DF0DF4870B00D0FD42E0420 /* Pods-KasFood.debug.xcconfig */,
+				BB2284B41F2EFDFF379D13BB /* Pods-KasFood.release.xcconfig */,
+				DD5FD98B09FD41C8BD70C772 /* Pods-KasFood-KasFoodUITests.debug.xcconfig */,
+				252FF319B94BAAB5B4D91018 /* Pods-KasFood-KasFoodUITests.release.xcconfig */,
+				E3DCB3B9774695D09FEC52EE /* Pods-KasFoodTests.debug.xcconfig */,
+				87C74A278C6B7309410D517B /* Pods-KasFoodTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		65F8030F2FB519FF7DC8D27C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5552EADF244FACC5BDDC0D11 /* Pods_KasFood.framework */,
+				4025B4EFDE55B9F722B3E449 /* Pods_KasFood_KasFoodUITests.framework */,
+				A58E251E07D220DF8933FD26 /* Pods_KasFoodTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -412,9 +464,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FED97432868CF8D0072264F /* Build configuration list for PBXNativeTarget "KasFood" */;
 			buildPhases = (
+				9BCB9DDBA5166ACA62188E3C /* [CP] Check Pods Manifest.lock */,
 				3FED97122868CF8A0072264F /* Sources */,
 				3FED97132868CF8A0072264F /* Frameworks */,
 				3FED97142868CF8A0072264F /* Resources */,
+				FBB0BADBBBF098884856D5A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -436,6 +490,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FED97462868CF8D0072264F /* Build configuration list for PBXNativeTarget "KasFoodTests" */;
 			buildPhases = (
+				74856545D614A845F4606F7C /* [CP] Check Pods Manifest.lock */,
 				3FED972B2868CF8D0072264F /* Sources */,
 				3FED972C2868CF8D0072264F /* Frameworks */,
 				3FED972D2868CF8D0072264F /* Resources */,
@@ -454,9 +509,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FED97492868CF8D0072264F /* Build configuration list for PBXNativeTarget "KasFoodUITests" */;
 			buildPhases = (
+				87E8ECDDA449D50957C0E760 /* [CP] Check Pods Manifest.lock */,
 				3FED97352868CF8D0072264F /* Sources */,
 				3FED97362868CF8D0072264F /* Frameworks */,
 				3FED97372868CF8D0072264F /* Resources */,
+				837E97B1FEC74BBA7C581CFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -520,10 +577,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FE42042286B2B660061C25A /* CategoryCollectionViewCell.xib in Resources */,
-				3F84BC282896B9A30096E644 /* GoogleService-Info.plist in Resources */,
 				3F9F50DB287339AD00F75C19 /* DishListTableViewCell.xib in Resources */,
 				3FED97292868CF8D0072264F /* LaunchScreen.storyboard in Resources */,
 				3F852D22286DBF9500CA1718 /* DishPortraitCollectionViewCell.xib in Resources */,
+				3FB733FA28CF4F7D004C607E /* GoogleService-Info.plist in Resources */,
 				3FED97262868CF8D0072264F /* Assets.xcassets in Resources */,
 				3F8BEDE02870271700B6322F /* DishLandscapeCollectionViewCell.xib in Resources */,
 				3FED97212868CF8A0072264F /* Main.storyboard in Resources */,
@@ -546,6 +603,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		74856545D614A845F4606F7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KasFoodTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		837E97B1FEC74BBA7C581CFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KasFood-KasFoodUITests/Pods-KasFood-KasFoodUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KasFood-KasFoodUITests/Pods-KasFood-KasFoodUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KasFood-KasFoodUITests/Pods-KasFood-KasFoodUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87E8ECDDA449D50957C0E760 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KasFood-KasFoodUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BCB9DDBA5166ACA62188E3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KasFood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBB0BADBBBF098884856D5A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KasFood/Pods-KasFood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KasFood/Pods-KasFood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KasFood/Pods-KasFood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3FED97122868CF8A0072264F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -553,6 +713,7 @@
 			files = (
 				3F45AC4128B3891700DE1CB6 /* ApiResponse.swift in Sources */,
 				3FCC35C32874035B00953C5E /* NetworkService.swift in Sources */,
+				3FEED25828DB428C00CE9E51 /* OrderFetching.swift in Sources */,
 				3F9F50DE28733D0200F75C19 /* ListDishesViewController.swift in Sources */,
 				3FED971A2868CF8A0072264F /* AppDelegate.swift in Sources */,
 				3FE42046286B3F040061C25A /* String+Extension.swift in Sources */,
@@ -563,6 +724,8 @@
 				3FCC35C72874047200953C5E /* Method.swift in Sources */,
 				3FF9EF8C28BCC26E001E465E /* FirebaseData.swift in Sources */,
 				3F9F50DA287339AD00F75C19 /* DishListTableViewCell.swift in Sources */,
+				3FEED25628DAC4F900CE9E51 /* AlertAsAdViewController.swift in Sources */,
+				3F90542928E9741B00879C5C /* BottomOrderView.swift in Sources */,
 				3FCC35C5287403EF00953C5E /* Route.swift in Sources */,
 				3FCC35BE2873FC5800953C5E /* ListOrdersViewController.swift in Sources */,
 				3FED97512869A0080072264F /* OnboardingViewController.swift in Sources */,
@@ -573,6 +736,7 @@
 				3F8BEDE528704FE500B6322F /* UIViewController.swift in Sources */,
 				3F852D21286DBF9500CA1718 /* DishPortraitCollectionViewCell.swift in Sources */,
 				3FCC35C92874408700953C5E /* AppError.swift in Sources */,
+				3F5EE1EB28C7DEA900B6CA10 /* Discounts.swift in Sources */,
 				3FE42041286B2B660061C25A /* CategoryCollectionViewCell.swift in Sources */,
 				3F9177DD289BE08400521DEA /* SignUpAlertViewController.swift in Sources */,
 				3FED97542869A38A0072264F /* UIView+Extension.swift in Sources */,
@@ -756,25 +920,27 @@
 		};
 		3FED97442868CF8D0072264F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF0DF4870B00D0FD42E0420 /* Pods-KasFood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = AY63UR757Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KasFood/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KasFood;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AzizZhandar.KasFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -785,25 +951,27 @@
 		};
 		3FED97452868CF8D0072264F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB2284B41F2EFDFF379D13BB /* Pods-KasFood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = AY63UR757Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KasFood/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KasFood;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AzizZhandar.KasFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -814,6 +982,7 @@
 		};
 		3FED97472868CF8D0072264F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3DCB3B9774695D09FEC52EE /* Pods-KasFoodTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -834,6 +1003,7 @@
 		};
 		3FED97482868CF8D0072264F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87C74A278C6B7309410D517B /* Pods-KasFoodTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -854,6 +1024,7 @@
 		};
 		3FED974A2868CF8D0072264F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD5FD98B09FD41C8BD70C772 /* Pods-KasFood-KasFoodUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -872,6 +1043,7 @@
 		};
 		3FED974B2868CF8D0072264F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 252FF319B94BAAB5B4D91018 /* Pods-KasFood-KasFoodUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

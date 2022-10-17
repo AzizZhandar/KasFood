@@ -9,19 +9,8 @@ import Foundation
 import UIKit
 
 struct Dish {
-    let image, name, description: String?
-//    let imageExample: UIImage?
-    let calories: Double?
-    
-//    private var toAnyObject: Any {
-//        return [
-//            "image": image,
-//            "name": name,
-//            "description": description,
-//        ]
-//    }
-    
-    var formattedCalories: String {
-        return "$ \(calories ?? 0)"
-    }
+    let name, description: String
+    let imageURL: String
+    let price: Double
 }
+typealias Dishes = [Dish]

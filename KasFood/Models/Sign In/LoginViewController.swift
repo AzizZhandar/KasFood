@@ -23,6 +23,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     let viewArea = UIView()
     
     let alert = AlertViewController()
+    let deleteOrder = OrderFetching()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +65,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             let vc = storyboard.instantiateViewController(withIdentifier: "HomeNC")
             vc.modalPresentationStyle = .overFullScreen
             self.present(vc, animated: true, completion: nil)
+        }
+        
+        // Need to delete Orders in Realtime Database
+        deleteOrder.deleteOrderInfo { goodData in
+            print(goodData)
+        } onError: { error in
+            print(error)
         }
     }
 
